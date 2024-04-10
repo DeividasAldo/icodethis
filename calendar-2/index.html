@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="calendar">
+      <div class="calendar-header">
+        <div class="prev" data-action="prev">
+          <i class="fa-solid fa-caret-left"></i>
+        </div>
+        <div class="month-year"></div>
+        <div class="next" data-action="next">
+          <i class="fa-solid fa-caret-right"></i>
+        </div>
+      </div>
+      <div class="calendar-body">
+        <div class="calendar-weekdays">
+          <div>SUN</div>
+          <div>MON</div>
+          <div>TUE</div>
+          <div>WED</div>
+          <div>THU</div>
+          <div>FRI</div>
+          <div>SAT</div>
+        </div>
+        <div class="calendar-days"></div>
+      </div>
+      <div class="events"></div>
+      <button class="open-modal-btn">
+        <i class="fa-solid fa-plus"></i>
+      </button>
+    </div>
+
+    <div class="modal">
+      <div class="modal-title">Add new event</div>
+      <input class="title-input" type="text" placeholder="title" />
+      <input class="time-input" type="text" placeholder="time" />
+      <div class="add-event-btn">Add Event</div>
+      <div class="close-modal-btn">Close Modal</div>
+    </div>
+  </body>
+</html>
